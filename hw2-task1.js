@@ -7,3 +7,7 @@
 //Задание 2
 //  let ageIphone = 2007;
 //  alert('Год выпуска первого iPhone:' + ageIphone)
+
+//Задание 3
+// let createdName = 'Брендан эйком'
+// alert('Имя создателя языка JavaScript' + createdName)
