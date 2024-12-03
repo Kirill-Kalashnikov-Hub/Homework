@@ -5,5 +5,5 @@
 // alert(a);
 
 //Задание 2
- let ageIphone = 2007;
- alert('Год выпуска первого iPhone:' + ageIphone)
+//  let ageIphone = 2007;
+//  alert('Год выпуска первого iPhone:' + ageIphone)
