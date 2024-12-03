@@ -27,3 +27,6 @@
 // let private = a / b;
 // alert('Частное: ' + private);
 
+//Задание 5
+let result = 2 ** 5;
+alert('Результат: ' + result)
