@@ -1,0 +1,41 @@
+@media (max-width: 375px) { 
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header { 
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        background-image: none;
+        background-image: url(img-mobile-header/mobileStar1.svg),
+                          url(img-mobile-header/mobileStar2.svg),
+                          url(img-mobile-header/mobileStar3.svg);
+        background-position: 37px 64px, calc(100% - 34px) calc(100% - 28px), calc(100% + 98px) calc(100% - 648px) ;
+        
+
+        &__top {    
+            font-size: 40px;
+            line-height: 49px;
+            text-align: center;
+        }
+
+        &__text {   
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+        }
+
+        &__button { 
+            margin-top: 38px;
+            width: 285px;
+            height: 55px;
+        }
+    }
+
+    .box-game { 
+        display: none;
+    }
+
+}

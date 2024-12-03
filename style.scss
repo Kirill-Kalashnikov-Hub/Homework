@@ -1,0 +1,191 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+html {  
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+  }
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+  }
+
+  .header { 
+    height: 800px;
+    background: #E1FF8F;
+    background-image: url(img-header/star1.png), 
+                      url(img-header/star2.png), 
+                      url(img-header/star3line.svg);
+    background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 258% -336px;
+    background-repeat: no-repeat;
+
+
+
+    &__top {    
+        color: rgb(32, 32, 39);
+        font-size: 64px;
+        line-height: 78px;
+        letter-spacing: 0px;
+        padding-top: 196px;
+        padding-bottom: 24px
+    }
+
+    &__text {   
+        color: rgb(32, 32, 39);
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0px;
+        padding-bottom: 48px;
+    }
+
+    &__button { 
+        box-sizing: border-box;
+        border: 1px solid rgb(32, 32, 39);
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        color: #fff;
+        width: 247px;
+        height: 66px;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 28px 16px 28px;
+    }
+
+    &__button { 
+        transition: all 0.5s;
+    }
+
+    &__button:hover {
+        background: #fff;
+        color: rgb(32, 32, 39);
+    }
+
+  }
+
+  .banner { 
+    display: flex;
+    background-color: #BCEC30;
+    height: 90px;
+    width: 3220px; 
+  }
+
+  .box-game { 
+    background-image: url(img-box-game/Star\ 1.svg);
+    background-color: #202027;
+    background-repeat: no-repeat;
+    background-position: 100% 77px ;
+    
+    &__title {  
+        padding-top: 94px;
+        color: rgb(255, 255, 255);
+        font-size: 64px;
+        line-height: 78px;
+        letter-spacing: 0px;
+    }
+
+    &__text {
+        padding-top: 24px; 
+        padding-bottom: 72px;
+        width: 788px;  
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0px;
+    }
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+
+
+    &__game {  
+    grid-column: span 4;
+    width: 378px;
+    height: 473px;
+    border-radius: 30px;
+    box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
+    background: rgb(255, 255, 255);
+    transition: transform 0.7s;
+    }
+    
+    &__game:hover { 
+        transform: scale(1.1);
+    }
+
+    &__game_medium {
+    margin-top: -39px;     
+    grid-column: span 4;
+    width: 378px;
+    height: 551px;
+    border-radius: 30px;
+    box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
+    background: rgb(255, 255, 255);
+    transition: transform 0.7s;
+    }
+
+    &__game_medium:hover { 
+        transform: scale(1.1);
+    }
+
+    &__game_big {   
+        grid-column: span 4;
+        width: 378px;
+        height: 512px;
+        border-radius: 30px;
+        box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
+        background: rgb(255, 255, 255);
+        transition: transform 0.7s;
+        }
+
+        &__game_big:hover { 
+            transform: scale(1.1);
+        }
+
+        &__game_img {   
+            width: 378px;
+            height: 314px;
+            border-radius: 30px;
+        }
+
+        &__game_info {  
+            padding-left: 32px;
+            padding-right: 32px;
+            padding-top: 32px;
+            padding-bottom: 36px;
+        }
+
+  }
+
+  .info { 
+    &__text {
+        width: 108px;
+        height: 36px;
+        border-radius: 52.58px;
+        background: rgb(247, 247, 247);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__title {  
+        color: rgb(32, 32, 39);
+        font-size: 32px;
+        line-height: 39px;
+        letter-spacing: 0px;
+        padding-top: 16px;
+    }
+}
+
+@import "mobile"
+
+  
