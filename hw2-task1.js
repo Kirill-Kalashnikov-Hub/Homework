@@ -52,10 +52,13 @@
 // alert("Вам " + age + " лет!")
 
 //Задание 9
-const user = {
-    name:'Kirill',
-    age: 25,
-    isAdmin: true,
-}
+// const user = {
+//     name:'Kirill',
+//     age: 25,
+//     isAdmin: true,
+// }
 
+//Задание 10
+let a = prompt('Как ваше имя ?')
+alert('Привет, ' + a)
   
