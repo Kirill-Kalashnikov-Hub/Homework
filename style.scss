@@ -44,7 +44,9 @@ body {
         padding-bottom: 48px;
     }
 
-    &__button { 
+    &__button {
+        font-family: Montserrat;
+        font-weight: 600; 
         box-sizing: border-box;
         border: 1px solid rgb(32, 32, 39);
         border-radius: 60px;

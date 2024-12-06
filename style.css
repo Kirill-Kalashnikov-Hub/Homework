@@ -39,6 +39,8 @@ body {
   padding-bottom: 48px;
 }
 .header__button {
+  font-family: Montserrat;
+  font-weight: 600;
   box-sizing: border-box;
   border: 1px solid rgb(32, 32, 39);
   border-radius: 60px;
