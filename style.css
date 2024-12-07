@@ -20,7 +20,7 @@ body {
   height: 800px;
   background: #E1FF8F;
   background-image: url(img-header/star1.png), url(img-header/star2.png), url(img-header/star3line.svg);
-  background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 258% -336px;
+  background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 157% -336px;
   background-repeat: no-repeat;
 }
 .header__top {
@@ -51,6 +51,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 16px 28px 16px 28px;
+  text-decoration: none;
 }
 .header__button {
   transition: all 0.5s;
@@ -107,7 +108,7 @@ body {
 .card__game:hover {
   transform: scale(1.1);
 }
-.card__game_medium {
+.card__game-medium {
   margin-top: -39px;
   grid-column: span 4;
   width: 378px;
@@ -117,10 +118,10 @@ body {
   background: rgb(255, 255, 255);
   transition: transform 0.7s;
 }
-.card__game_medium:hover {
+.card__game-medium:hover {
   transform: scale(1.1);
 }
-.card__game_big {
+.card__game-big {
   grid-column: span 4;
   width: 378px;
   height: 512px;
@@ -129,15 +130,15 @@ body {
   background: rgb(255, 255, 255);
   transition: transform 0.7s;
 }
-.card__game_big:hover {
+.card__game-big:hover {
   transform: scale(1.1);
 }
-.card__game_img {
+.card__game-img {
   width: 378px;
   height: 314px;
   border-radius: 30px;
 }
-.card__game_info {
+.card__game-info {
   padding-left: 32px;
   padding-right: 32px;
   padding-top: 32px;
@@ -220,6 +221,7 @@ body {
   text-align: center;
   border-radius: 60px;
   background: rgb(32, 32, 39);
+  cursor: pointer;
 }
 .minicard__button:hover {
   background: #fff;
@@ -233,6 +235,12 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+}
+
+.link-games {
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(32, 32, 39);
 }
 
 .footer {

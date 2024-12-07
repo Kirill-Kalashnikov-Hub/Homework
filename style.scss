@@ -22,7 +22,7 @@ body {
     background-image: url(img-header/star1.png), 
                       url(img-header/star2.png), 
                       url(img-header/star3line.svg);
-    background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 210% -336px;
+    background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 157% -336px;
     background-repeat: no-repeat;
 
 
@@ -57,6 +57,8 @@ body {
         justify-content: center;
         align-items: center;
         padding: 16px 28px 16px 28px;
+        text-decoration: none;
+        
     }
 
     &__button { 
@@ -122,7 +124,7 @@ body {
         transform: scale(1.1);
     }
 
-    &__game_medium {
+    &__game-medium {
     margin-top: -39px;     
     grid-column: span 4;
     width: 378px;
@@ -133,11 +135,11 @@ body {
     transition: transform 0.7s;
     }
 
-    &__game_medium:hover { 
+    &__game-medium:hover { 
         transform: scale(1.1);
     }
 
-    &__game_big {   
+    &__game-big {   
         grid-column: span 4;
         width: 378px;
         height: 512px;
@@ -147,17 +149,17 @@ body {
         transition: transform 0.7s;
         }
 
-        &__game_big:hover { 
+        &__game-big:hover { 
             transform: scale(1.1);
         }
 
-        &__game_img {   
+        &__game-img {   
             width: 378px;
             height: 314px;
             border-radius: 30px;
         }
 
-        &__game_info {  
+        &__game-info {  
             padding-left: 32px;
             padding-right: 32px;
             padding-top: 32px;
@@ -254,6 +256,7 @@ body {
         text-align: center;
         border-radius: 60px;
         background: rgb(32, 32, 39);
+        cursor:pointer;
     }
 
     &__button:hover {
@@ -270,6 +273,12 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+}
+
+.link-games {   
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(32, 32, 39);
 }
 
 .footer {
