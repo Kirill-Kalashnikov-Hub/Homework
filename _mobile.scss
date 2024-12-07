@@ -21,16 +21,22 @@
             text-align: center;
         }
 
-        &__text {   
+        &__text {
+            padding-bottom: 0;   
             font-size: 16px;
             line-height: 20px;
             text-align: center;
         }
 
         &__button { 
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 141.69%;
             margin-top: 38px;
             width: 285px;
             height: 55px;
+            margin-top: 36px;
         }
     }
 
