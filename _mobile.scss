@@ -28,6 +28,10 @@
         }
 
         &__button { 
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 141.69%;
             margin-top: 38px;
             width: 285px;
             height: 55px;
@@ -37,5 +41,79 @@
     .box-game { 
         display: none;
     }
+
+
+
+.minicard:nth-child(2n) {   
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.mini-game {    
+    background-image: none;
+    display: flex;
+    gap: 24px;
+    padding-bottom: 54px;
+
+    &__title {  
+        padding-top: 48px;
+        padding-bottom: 24px;
+        font-size: 40px;
+        line-height: 49px;
+    }
+}
+
+.minicard { 
+    width: 343px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+
+    &__img-mobile {  
+          
+        width: 343px;
+        
+    }
+
+    &__info {   
+        padding-top: 29px;
+        padding-left: 29px;
+        padding-right: 29px;
+        padding-bottom: 32px;
+    }
+
+    &__title {  
+        font-size: 32px;
+        line-height: 39px;
+    }
+
+    &__text { 
+        padding-top: 16px; 
+        padding-bottom: 32px; 
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    &__button { 
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 141.69%;
+        width: 285px;
+        height: 55px;
+    }
+}
+
+.footer {   
+    height: 100px;
+
+    &__heading {    
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+
 
 }
