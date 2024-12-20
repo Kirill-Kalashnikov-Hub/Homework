@@ -22,7 +22,8 @@ body {
     background-image: url(img-header/star1.png), 
                       url(img-header/star2.png), 
                       url(img-header/star3line.svg);
-    background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 157% -336px;
+
+    background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 210% -336px;
     background-repeat: no-repeat;
 
 
@@ -44,7 +45,9 @@ body {
         padding-bottom: 48px;
     }
 
-    &__button { 
+    &__button {
+        font-family: Montserrat;
+        font-weight: 600; 
         box-sizing: border-box;
         border: 1px solid rgb(32, 32, 39);
         border-radius: 60px;
