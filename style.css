@@ -191,7 +191,6 @@ body {
   box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
 }
 .minicard__img {
-  width: 600px;
   border-radius: 30px;
 }
 .minicard__info {
