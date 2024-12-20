@@ -20,6 +20,7 @@ body {
   height: 800px;
   background: #E1FF8F;
   background-image: url(img-header/star1.png), url(img-header/star2.png), url(img-header/star3line.svg);
+
   background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 210% -336px;
   background-repeat: no-repeat;
 }
@@ -53,6 +54,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 16px 28px 16px 28px;
+  text-decoration: none;
 }
 .header__button {
   transition: all 0.5s;
@@ -109,7 +111,7 @@ body {
 .card__game:hover {
   transform: scale(1.1);
 }
-.card__game_medium {
+.card__game-medium {
   margin-top: -39px;
   grid-column: span 4;
   width: 378px;
@@ -119,10 +121,10 @@ body {
   background: rgb(255, 255, 255);
   transition: transform 0.7s;
 }
-.card__game_medium:hover {
+.card__game-medium:hover {
   transform: scale(1.1);
 }
-.card__game_big {
+.card__game-big {
   grid-column: span 4;
   width: 378px;
   height: 512px;
@@ -131,15 +133,15 @@ body {
   background: rgb(255, 255, 255);
   transition: transform 0.7s;
 }
-.card__game_big:hover {
+.card__game-big:hover {
   transform: scale(1.1);
 }
-.card__game_img {
+.card__game-img {
   width: 378px;
   height: 314px;
   border-radius: 30px;
 }
-.card__game_info {
+.card__game-info {
   padding-left: 32px;
   padding-right: 32px;
   padding-top: 32px;
@@ -161,6 +163,99 @@ body {
   line-height: 39px;
   letter-spacing: 0px;
   padding-top: 16px;
+}
+
+.mini-game {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  background-color: #202027;
+  padding-bottom: 144px;
+  background-image: url(img-minicard/star_top.svg), url(img-minicard/star_bottom.svg);
+  background-position: right 45px top 143px, right 52px bottom 45px;
+  background-repeat: no-repeat;
+}
+.mini-game__title {
+  padding-top: 96px;
+  padding-bottom: 72px;
+  color: rgb(255, 255, 255);
+  font-size: 64px;
+  line-height: 78px;
+}
+
+.minicard {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 1200px;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+}
+.minicard__img {
+  width: 600px;
+  border-radius: 30px;
+}
+.minicard__info {
+  padding: 48px;
+}
+.minicard__title {
+  color: rgb(32, 32, 39);
+  font-size: 48px;
+  line-height: 59px;
+}
+.minicard__text {
+  padding-top: 24px;
+  padding-bottom: 36px;
+  color: rgb(32, 32, 39);
+  font-size: 24px;
+  line-height: 32px;
+}
+.minicard__button {
+  width: 247px;
+  height: 66px;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  text-align: center;
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  cursor: pointer;
+}
+.minicard__button:hover {
+  background: #fff;
+  color: rgb(32, 32, 39);
+}
+.minicard__button {
+  transition: all 0.5s;
+}
+
+.minicard:nth-child(2n) {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.link-games {
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(32, 32, 39);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background: rgb(189, 237, 53);
+}
+.footer__heading {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  line-height: 29px;
 }
 
 @media (max-width: 375px) {
@@ -199,5 +294,60 @@ body {
   }
   .box-game {
     display: none;
+  }
+  .minicard:nth-child(2n) {
+    display: flex;
+    flex-direction: column;
+  }
+  .mini-game {
+    background-image: none;
+    display: flex;
+    gap: 24px;
+    padding-bottom: 54px;
+  }
+  .mini-game__title {
+    padding-top: 48px;
+    padding-bottom: 24px;
+    font-size: 40px;
+    line-height: 49px;
+  }
+  .minicard {
+    width: 343px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .minicard__img-mobile {
+    width: 343px;
+  }
+  .minicard__info {
+    padding-top: 29px;
+    padding-left: 29px;
+    padding-right: 29px;
+    padding-bottom: 32px;
+  }
+  .minicard__title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .minicard__text {
+    padding-top: 16px;
+    padding-bottom: 32px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .minicard__button {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 141.69%;
+    width: 285px;
+    height: 55px;
+  }
+  .footer {
+    height: 100px;
+  }
+  .footer__heading {
+    font-size: 16px;
+    line-height: 20px;
   }
 }/*# sourceMappingURL=style.css.map */

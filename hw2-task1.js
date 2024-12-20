@@ -59,6 +59,7 @@
 // }
 
 //Задание 10
+
 let userName = prompt('Как ваше имя ?')
 alert(`Привет, ${userName}!`)
   
