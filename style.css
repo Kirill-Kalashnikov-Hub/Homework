@@ -20,7 +20,8 @@ body {
   height: 800px;
   background: #E1FF8F;
   background-image: url(img-header/star1.png), url(img-header/star2.png), url(img-header/star3line.svg);
-  background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 157% -336px;
+
+  background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 210% -336px;
   background-repeat: no-repeat;
 }
 .header__top {
@@ -39,6 +40,8 @@ body {
   padding-bottom: 48px;
 }
 .header__button {
+  font-family: Montserrat;
+  font-weight: 600;
   box-sizing: border-box;
   border: 1px solid rgb(32, 32, 39);
   border-radius: 60px;
@@ -273,6 +276,7 @@ body {
     text-align: center;
   }
   .header__text {
+    padding-bottom: 0;
     font-size: 16px;
     line-height: 20px;
     text-align: center;
@@ -285,6 +289,7 @@ body {
     margin-top: 38px;
     width: 285px;
     height: 55px;
+    margin-top: 36px;
   }
   .box-game {
     display: none;
