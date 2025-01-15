@@ -189,10 +189,20 @@
 //   const incorrectInput = getNegativeNumbers(notArray);
 //   console.log(incorrectInput);
 
-  console.log('Задание 14');
-  const originalArray = Array.from({ length: 10 }, () => Math.floor(Math.random() * 11));
+//   console.log('Задание 14');
+//   const originalArray = Array.from({ length: 10 }, () => Math.floor(Math.random() * 11));
 
-  const evenNumbers = originalArray.filter(number => number % 2 === 0);
+//   const evenNumbers = originalArray.filter(number => number % 2 === 0);
 
-console.log("Исходный массив:", originalArray);
-console.log("Четные числа:", evenNumbers);
+// console.log("Исходный массив:", originalArray);
+// console.log("Четные числа:", evenNumbers);
+
+console.log('Задание 15');
+const myArray = Array.from({ length: 6 }, () => Math.floor(Math.random() * 10) + 1);
+
+const sum = myArray.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+const average = sum / myArray.length;
+
+console.log("Сгенерированный массив:", myArray);
+console.log("Среднее арифметическое:", average);
