@@ -78,9 +78,19 @@
 // const reversedStr = str.split('').reverse().join('');
 // console.log(reversedStr);
 
-console.log('Задание 9');
-const multiArray = [[1, 2, 3], [4, 5, 6]];
-const flattenedArray = multiArray.reduce((accumulator, currentArray) => {
-  return accumulator.concat(currentArray);
-}, []);
-console.log(flattenedArray);
+// console.log('Задание 9');
+// const multiArray = [[1, 2, 3], [4, 5, 6]];
+// const flattenedArray = multiArray.reduce((accumulator, currentArray) => {
+//   return accumulator.concat(currentArray);
+// }, []);
+// console.log(flattenedArray);
+
+console.log('Задание 10');
+const myArray = Array.from({ length: 10 }, () => Math.floor(Math.random() * 10) + 1);
+for (let i = 0; i < myArray.length - 1; i++) {
+  const currentElement = myArray[i];
+  const nextElement = myArray[i + 1];
+  const sum = currentElement + nextElement;
+
+  console.log(`Сумма элементов ${currentElement} и ${nextElement} = ${sum}`);
+}
