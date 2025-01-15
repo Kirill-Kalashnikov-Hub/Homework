@@ -19,8 +19,22 @@
 //   console.log(`Значение ${indexValue} не найдено в массиве`);
 // }
 
-console.log('Задание 3');
-const myArray = [1, 3, 5, 10, 20];
-const result = myArray.join(' ');
-console.log(result);
+// console.log('Задание 3');
+// const myArray = [1, 3, 5, 10, 20];
+// const result = myArray.join(' ');
+// console.log(result);
+
+console.log('Задание 4');
+const rows = 3;
+const cols = 3;
+const multiArray = [];
+
+for (let i = 0; i < rows; i++) {
+  const row = [];
+  for (let j = 0; j < cols; j++) {
+    row.push(1);
+  }
+  multiArray.push(row);
+}
+console.log(multiArray);
 
