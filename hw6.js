@@ -95,31 +95,60 @@
 //   console.log(`Сумма элементов ${currentElement} и ${nextElement} = ${sum}`);
 // }
 
-console.log('Задание 11');
-function squareArray(arr) {
+// console.log('Задание 11');
+// function squareArray(arr) {
+//     if (!Array.isArray(arr)) {
+//       return "Ошибка: на вход должен быть передан массив";
+//     }
+    
+//     const squaredArr = [];
+//     for (let i = 0; i < arr.length; i++) {
+//        if (typeof arr[i] !== 'number' || !Number.isInteger(arr[i])) {
+//           return "Ошибка: массив должен содержать только целые числа"
+//        }
+//       squaredArr.push(arr[i] * arr[i]);
+//     }
+//     return squaredArr;
+//   }
+  
+//   // Примеры массивов:
+//   const numbers = [1, 2, 3, 4, 5];
+//   const squaredNumbers = squareArray(numbers);
+//   console.log(squaredNumbers);
+  
+//   const notInteger = [1, 2, 3, 4.8, 5];
+//   const incorrectArray = squareArray(notInteger);
+//   console.log(incorrectArray); 
+  
+//   const notArray = "Не массив";
+//   const incorrectInput = squareArray(notArray);
+//   console.log(incorrectInput); 
+
+  console.log('Задание 12');
+
+  function getWordLengths(arr) {
     if (!Array.isArray(arr)) {
       return "Ошибка: на вход должен быть передан массив";
     }
-    
-    const squaredArr = [];
+  
     for (let i = 0; i < arr.length; i++) {
-       if (typeof arr[i] !== 'number' || !Number.isInteger(arr[i])) {
-          return "Ошибка: массив должен содержать только целые числа"
-       }
-      squaredArr.push(arr[i] * arr[i]);
+      if (typeof arr[i] !== 'string') {
+        return "Ошибка: массив должен содержать только строки";
+      }
     }
-    return squaredArr;
+  
+    return arr.map(str => str.length);
   }
   
-  // Примеры массивов:
-  const numbers = [1, 2, 3, 4, 5];
-  const squaredNumbers = squareArray(numbers);
-  console.log(squaredNumbers);
+  // Примеры массивов :
+  const words = ['собака', 'ель', 'органайзер', 'пурпурный'];
+  const lengths = getWordLengths(words);
+  console.log(lengths); 
   
-  const notInteger = [1, 2, 3, 4.8, 5];
-  const incorrectArray = squareArray(notInteger);
-  console.log(incorrectArray); 
+  const notStrings = ['кошка', 7, 'птица', 'кислый'];
+  const incorrectArray = getWordLengths(notStrings);
+  console.log(incorrectArray);
   
-  const notArray = "Не массив";
-  const incorrectInput = squareArray(notArray);
-  console.log(incorrectInput); 
+  const notArray = "не массив";
+  const incorrectInput = getWordLengths(notArray);
+  console.log(incorrectInput);
