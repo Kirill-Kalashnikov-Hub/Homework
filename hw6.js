@@ -85,12 +85,41 @@
 // }, []);
 // console.log(flattenedArray);
 
-console.log('Задание 10');
-const myArray = Array.from({ length: 10 }, () => Math.floor(Math.random() * 10) + 1);
-for (let i = 0; i < myArray.length - 1; i++) {
-  const currentElement = myArray[i];
-  const nextElement = myArray[i + 1];
-  const sum = currentElement + nextElement;
+// console.log('Задание 10');
+// const myArray = Array.from({ length: 10 }, () => Math.floor(Math.random() * 10) + 1);
+// for (let i = 0; i < myArray.length - 1; i++) {
+//   const currentElement = myArray[i];
+//   const nextElement = myArray[i + 1];
+//   const sum = currentElement + nextElement;
 
-  console.log(`Сумма элементов ${currentElement} и ${nextElement} = ${sum}`);
-}
+//   console.log(`Сумма элементов ${currentElement} и ${nextElement} = ${sum}`);
+// }
+
+console.log('Задание 11');
+function squareArray(arr) {
+    if (!Array.isArray(arr)) {
+      return "Ошибка: на вход должен быть передан массив";
+    }
+    
+    const squaredArr = [];
+    for (let i = 0; i < arr.length; i++) {
+       if (typeof arr[i] !== 'number' || !Number.isInteger(arr[i])) {
+          return "Ошибка: массив должен содержать только целые числа"
+       }
+      squaredArr.push(arr[i] * arr[i]);
+    }
+    return squaredArr;
+  }
+  
+  // Примеры массивов:
+  const numbers = [1, 2, 3, 4, 5];
+  const squaredNumbers = squareArray(numbers);
+  console.log(squaredNumbers);
+  
+  const notInteger = [1, 2, 3, 4.8, 5];
+  const incorrectArray = squareArray(notInteger);
+  console.log(incorrectArray); 
+  
+  const notArray = "Не массив";
+  const incorrectInput = squareArray(notArray);
+  console.log(incorrectInput); 
