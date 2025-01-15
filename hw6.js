@@ -1,9 +1,22 @@
-console.log('Задание 1');
-const myArray = [1, 5, 4, 10, 0, 3];
+// console.log('Задание 1');
+// const myArray = [1, 5, 4, 10, 0, 3];
 
-for (let i = 0; i < myArray.length; i++) {
-  console.log(myArray[i]);
-  if (myArray[i] === 10) {
-    break; // Прерываем цикл, когда встречаем 10
-  }
+// for (let i = 0; i < myArray.length; i++) {
+//   console.log(myArray[i]);
+//   if (myArray[i] === 10) {
+//     break; // Прерываем цикл, когда встречаем 10
+//   }
+// }
+
+console.log('Задание 2');
+const myArray = [1, 5, 4, 10, 0, 3];
+const indexValue  = 4;
+
+const index = myArray.findIndex(element => element === indexValue);
+
+if (index !== -1) {
+  console.log(`Индекс значения ${indexValue} в массиве: ${index}`);
+} else {
+  console.log(`Значение ${indexValue} не найдено в массиве`);
 }
+
