@@ -52,23 +52,28 @@
 // }
 // console.log(myArray);
 
-console.log('Задание 7');
-const myArray = [9, 8, 7, 6, 5];
-const userGuess = prompt("Угадайте число из массива [9, 8, 7, 6, 5]");
+// console.log('Задание 7');
+// const myArray = [9, 8, 7, 6, 5];
+// const userGuess = prompt("Угадайте число из массива [9, 8, 7, 6, 5]");
 
-if (userGuess === null) {
-    alert("Игра отменена");
-} else {
-    const userNumber = parseInt(userGuess);
+// if (userGuess === null) {
+//     alert("Игра отменена");
+// } else {
+//     const userNumber = parseInt(userGuess);
 
-    if (isNaN(userNumber)) {
-        alert("Введите пожалуйста число");
-    } else {
+//     if (isNaN(userNumber)) {
+//         alert("Введите пожалуйста число");
+//     } else {
 
-         if (myArray.includes(userNumber)) {
-           alert("Угадал");
-         } else {
-            alert("Не угадал");
-          }
-    }
-}
+//          if (myArray.includes(userNumber)) {
+//            alert("Угадал");
+//          } else {
+//             alert("Не угадал");
+//           }
+//     }
+// }
+
+console.log('Задание 8');
+const str = 'abcdef';
+const reversedStr = str.split('').reverse().join('');
+console.log(reversedStr);
