@@ -73,7 +73,14 @@
 //     }
 // }
 
-console.log('Задание 8');
-const str = 'abcdef';
-const reversedStr = str.split('').reverse().join('');
-console.log(reversedStr);
+// console.log('Задание 8');
+// const str = 'abcdef';
+// const reversedStr = str.split('').reverse().join('');
+// console.log(reversedStr);
+
+console.log('Задание 9');
+const multiArray = [[1, 2, 3], [4, 5, 6]];
+const flattenedArray = multiArray.reduce((accumulator, currentArray) => {
+  return accumulator.concat(currentArray);
+}, []);
+console.log(flattenedArray);
