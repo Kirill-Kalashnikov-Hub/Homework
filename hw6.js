@@ -24,17 +24,21 @@
 // const result = myArray.join(' ');
 // console.log(result);
 
-console.log('Задание 4');
-const rows = 3;
-const cols = 3;
-const multiArray = [];
+// console.log('Задание 4');
+// const rows = 3;
+// const cols = 3;
+// const multiArray = [];
 
-for (let i = 0; i < rows; i++) {
-  const row = [];
-  for (let j = 0; j < cols; j++) {
-    row.push(1);
-  }
-  multiArray.push(row);
-}
-console.log(multiArray);
+// for (let i = 0; i < rows; i++) {
+//   const row = [];
+//   for (let j = 0; j < cols; j++) {
+//     row.push(1);
+//   }
+//   multiArray.push(row);
+// }
+// console.log(multiArray);
 
+console.log('Задание 5');
+const myArray = [1, 1, 1];
+myArray.push(2, 2, 2);
+console.log(myArray);
