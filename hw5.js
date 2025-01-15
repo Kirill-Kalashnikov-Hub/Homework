@@ -93,32 +93,32 @@
 
 
 
-console.log('Задание 7.');
+// console.log('Задание 7.');
 
-function getArea() {
-    return Math.PI * this.radius ** 2;
-}
+// function getArea() {
+//     return Math.PI * this.radius ** 2;
+// }
 
-function getPerimeter() {
-    return Math.PI * this.radius ** 2;
-}
+// function getPerimeter() {
+//     return Math.PI * this.radius ** 2;
+// }
 
-const circle1 = {
-    radius: 10,
-    methodGetArea: getArea,
-    methodGetPerimeter: getPerimeter,
-}
+// const circle1 = {
+//     radius: 10,
+//     methodGetArea: getArea,
+//     methodGetPerimeter: getPerimeter,
+// }
 
-const circle2 = {
-    radius: 20,
-    methodGetArea: getArea,
-    methodGetPerimeter: getPerimeter,
-}
+// const circle2 = {
+//     radius: 20,
+//     methodGetArea: getArea,
+//     methodGetPerimeter: getPerimeter,
+// }
 
-console.log(circle1.methodGetArea());
-console.log(circle1.methodGetPerimeter());
-console.log(circle2.methodGetArea());
-console.log(circle2.methodGetPerimeter());
+// console.log(circle1.methodGetArea());
+// console.log(circle1.methodGetPerimeter());
+// console.log(circle2.methodGetArea());
+// console.log(circle2.methodGetPerimeter());
 
 
 
