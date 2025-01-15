@@ -38,7 +38,16 @@
 // }
 // console.log(multiArray);
 
-console.log('Задание 5');
-const myArray = [1, 1, 1];
-myArray.push(2, 2, 2);
+// console.log('Задание 5');
+// const myArray = [1, 1, 1];
+// myArray.push(2, 2, 2);
+// console.log(myArray);
+
+console.log('Задание 6');
+let myArray = [9, 8, 7, 'a', 6, 5];
+myArray.sort();
+const indexA = myArray.indexOf('a');
+if (indexA !== -1) {
+  myArray.splice(indexA, 1);
+}
 console.log(myArray);
