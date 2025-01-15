@@ -124,31 +124,67 @@
 //   const incorrectInput = squareArray(notArray);
 //   console.log(incorrectInput); 
 
-  console.log('Задание 12');
+//   console.log('Задание 12');
 
-  function getWordLengths(arr) {
+//   function getWordLengths(arr) {
+//     if (!Array.isArray(arr)) {
+//       return "Ошибка: на вход должен быть передан массив";
+//     }
+  
+//     for (let i = 0; i < arr.length; i++) {
+//       if (typeof arr[i] !== 'string') {
+//         return "Ошибка: массив должен содержать только строки";
+//       }
+//     }
+  
+//     return arr.map(str => str.length);
+//   }
+  
+//   // Примеры массивов :
+//   const words = ['собака', 'ель', 'органайзер', 'пурпурный'];
+//   const lengths = getWordLengths(words);
+//   console.log(lengths); 
+  
+//   const notStrings = ['кошка', 7, 'птица', 'кислый'];
+//   const incorrectArray = getWordLengths(notStrings);
+//   console.log(incorrectArray);
+  
+//   const notArray = "не массив";
+//   const incorrectInput = getWordLengths(notArray);
+//   console.log(incorrectInput);
+
+  console.log('Задание 13');
+  function getNegativeNumbers(arr) {
     if (!Array.isArray(arr)) {
       return "Ошибка: на вход должен быть передан массив";
     }
   
     for (let i = 0; i < arr.length; i++) {
-      if (typeof arr[i] !== 'string') {
-        return "Ошибка: массив должен содержать только строки";
-      }
+        if (typeof arr[i] !== 'number' || !Number.isInteger(arr[i])) {
+            return "Ошибка: массив должен содержать только целые числа";
+        }
     }
   
-    return arr.map(str => str.length);
+    return arr.filter(number => number < 0);
   }
   
-  // Примеры массивов :
-  const words = ['собака', 'ель', 'органайзер', 'пурпурный'];
-  const lengths = getWordLengths(words);
-  console.log(lengths); 
+  // Примеры использования:
+  const numbers1 = [1, -7, 3, -20, 13, -10, 6];
+  const negativeNumbers1 = getNegativeNumbers(numbers1);
+  console.log(negativeNumbers1);
   
-  const notStrings = ['кошка', 7, 'птица', 'кислый'];
-  const incorrectArray = getWordLengths(notStrings);
-  console.log(incorrectArray);
+  const numbers2 = [1, 2, 3, 4, 5];
+  const negativeNumbers2 = getNegativeNumbers(numbers2);
+  console.log(negativeNumbers2);
   
+  const numbers3 = [-1, -2, -3, -4, -5];
+  const negativeNumbers3 = getNegativeNumbers(numbers3);
+  console.log(negativeNumbers3);
+  
+  const notIntegers = [1.10, 2, 3, 4, 5];
+  const incorrectArray = getNegativeNumbers(notIntegers);
+  console.log(incorrectArray); 
+
   const notArray = "не массив";
-  const incorrectInput = getWordLengths(notArray);
+  const incorrectInput = getNegativeNumbers(notArray);
   console.log(incorrectInput);
