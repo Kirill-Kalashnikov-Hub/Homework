@@ -61,3 +61,13 @@ const maxValue = Math.max(...numbers);
 
 console.log("Минимальное значение:", minValue);
 console.log("Максимальное значение:", maxValue);
+
+
+console.log('Задание 5');
+function getRandomNumber() {
+  const randomNumber = Math.floor(Math.random() * 10);
+  const result = randomNumber + 1;
+
+  console.log("Случайное число от 1 до 10:", result);
+}
+getRandomNumber();
