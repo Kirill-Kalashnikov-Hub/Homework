@@ -142,3 +142,21 @@ console.log("Текущая дата (год-месяц-день):", formattedDa
 const options = { year: 'numeric', month: 'long', day: 'numeric' };
 const localizedDate = currentDate.toLocaleDateString('ru-RU', options); 
 console.log("Текущая дата (словесный формат, рус):", localizedDate);
+
+
+console.log('Задание 9');
+const presentDate = new Date();
+
+
+const futureDate = new Date(presentDate); 
+futureDate.setDate(presentDate.getDate() + 73);
+
+
+const theYear = futureDate.getFullYear();
+const theMonth = String(futureDate.getMonth() + 1).padStart(2, '0'); 
+const theDay = String(futureDate.getDate()).padStart(2, '0');
+
+const formattedFutureDate = `${theYear}-${theMonth}-${theDay}`;
+
+console.log("Текущая дата:", presentDate);
+console.log("Дата через 73 дня:", formattedFutureDate);
