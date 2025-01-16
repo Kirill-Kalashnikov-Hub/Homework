@@ -127,3 +127,18 @@ console.log(getRandomNumberInRange(10, 5));
 console.log(getRandomNumberInRange(1.5, 5)); 
 console.log(getRandomNumberInRange(1, 5.5)); 
 console.log(getRandomNumberInRange(1, "5"));
+
+
+console.log('Задание 8');
+const currentDate = new Date();
+
+const year = currentDate.getFullYear();
+const month = String(currentDate.getMonth() + 1).padStart(2, '0'); 
+const day = String(currentDate.getDate()).padStart(2, '0');
+
+const formattedDate = `${year}-${month}-${day}`;
+console.log("Текущая дата (год-месяц-день):", formattedDate);
+
+const options = { year: 'numeric', month: 'long', day: 'numeric' };
+const localizedDate = currentDate.toLocaleDateString('ru-RU', options); 
+console.log("Текущая дата (словесный формат, рус):", localizedDate);
