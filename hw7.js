@@ -104,3 +104,26 @@ console.log(generateRandomArray(5.5));
 console.log(generateRandomArray(-5));
 
 
+console.log('Задание 7');
+function getRandomNumberInRange(min, max) {
+  if (!Number.isInteger(min) || !Number.isInteger(max)) {
+      return "Ошибка: оба аргумента должны быть целыми числами";
+  }
+
+  if (min > max) {
+      return "Ошибка: минимальное значение должно быть меньше или равно максимальному";
+  }
+
+  const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+  return randomNumber;
+}
+
+// Примеры использования:
+console.log(getRandomNumberInRange(5, 10)); 
+console.log(getRandomNumberInRange(1, 100)); 
+console.log(getRandomNumberInRange(-10, 0)); 
+
+console.log(getRandomNumberInRange(10, 5)); 
+console.log(getRandomNumberInRange(1.5, 5)); 
+console.log(getRandomNumberInRange(1, 5.5)); 
+console.log(getRandomNumberInRange(1, "5"));
