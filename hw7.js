@@ -42,3 +42,13 @@ console.log(incorrectInput);
 const notString = ['apple', 'banana', 'orange'];
 const incorrectInput2 = filterStringsByStart(notString, 1);
 console.log(incorrectInput2);
+
+
+console.log('Задание 3');
+const number = 32.58884;
+const roundedDown = Math.floor(number);
+console.log("Округление до меньшего целого:", roundedDown);
+const roundedUp = Math.ceil(number);
+console.log("Округление до большего целого:", roundedUp);
+const roundedNearest = Math.round(number);
+console.log("Округление до ближайшего целого:", roundedNearest);
