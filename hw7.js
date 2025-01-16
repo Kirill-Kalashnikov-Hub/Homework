@@ -160,3 +160,57 @@ const formattedFutureDate = `${theYear}-${theMonth}-${theDay}`;
 
 console.log("Текущая дата:", presentDate);
 console.log("Дата через 73 дня:", formattedFutureDate);
+
+
+console.log('Задание 10');
+function formatDateWithDayOfWeek(date) {
+  if (!(date instanceof Date)) {
+      return "Ошибка: в функцию нужно передать дату";
+  }
+
+const daysOfWeek = [
+  "воскресенье",
+  "понедельник",
+  "вторник",
+  "среда",
+  "четверг",
+  "пятница",
+  "суббота",
+];
+const months = [
+  "января",
+  "февраля",
+  "марта",
+  "апреля",
+  "мая",
+  "июня",
+  "июля",
+  "августа",
+  "сентября",
+  "октября",
+  "ноября",
+  "декабря",
+];
+
+const day = date.getDate();
+const month = months[date.getMonth()];
+const year = date.getFullYear();
+const dayOfWeek = daysOfWeek[date.getDay()];
+
+  const hours = String(date.getHours()).padStart(2, '0');
+  const minutes = String(date.getMinutes()).padStart(2, '0');
+  const seconds = String(date.getSeconds()).padStart(2, '0');
+
+  return `Дата: ${day} ${month} ${year} — это ${dayOfWeek}.
+Время: ${hours}:${minutes}:${seconds}`;
+}
+
+// Примеры использования:
+const now = new Date();
+console.log(formatDateWithDayOfWeek(now));
+
+const someDate = new Date(2024, 0, 1);
+console.log(formatDateWithDayOfWeek(someDate));
+
+const notInput = "not a date"
+console.log(formatDateWithDayOfWeek(notInput));
