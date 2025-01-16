@@ -71,3 +71,36 @@ function getRandomNumber() {
   console.log("Случайное число от 1 до 10:", result);
 }
 getRandomNumber();
+
+
+console.log('Задание 6');
+function generateRandomArray(limit) {
+  if (!Number.isInteger(limit) || limit <= 0) {
+    return "Ошибка: введите положительное целое число";
+  }
+
+  const arrayLength = Math.floor(limit / 2);
+  const randomArray = [];
+
+  for (let i = 0; i < arrayLength; i++) {
+    const randomNumber = Math.floor(Math.random() * (limit + 1));
+    randomArray.push(randomNumber);
+  }
+
+  return randomArray;
+}
+
+// Примеры использования:
+console.log(generateRandomArray(10));
+
+console.log(generateRandomArray(15));
+
+console.log(generateRandomArray(6));
+
+console.log(generateRandomArray(0));
+
+console.log(generateRandomArray(5.5));
+
+console.log(generateRandomArray(-5));
+
+
