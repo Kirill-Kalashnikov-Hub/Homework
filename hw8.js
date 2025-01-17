@@ -58,3 +58,14 @@ const people = [
       clearInterval(intervalId);
       console.log("30 секунд прошло");
   }, 30000);
+
+
+
+  console.log('Задание 4');
+  function delayForSecond(callback) {
+    setTimeout(callback, 1000); 
+}
+
+delayForSecond(function () {
+    console.log('Привет, Глеб!');
+});
