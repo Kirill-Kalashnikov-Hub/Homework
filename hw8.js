@@ -39,3 +39,22 @@ const people = [
   ];
   
   console.log(filter(people, isMale));
+
+
+  console.log('Задание 3');
+  function printCurrentDate() {
+    const now = new Date();
+    console.log(now.toLocaleString());
+  }
+  
+  let secondsPassed = 0;
+  const intervalId = setInterval(() => {
+      printCurrentDate();
+      secondsPassed += 3;
+  }, 3000);
+  
+  
+  setTimeout(() => {
+      clearInterval(intervalId);
+      console.log("30 секунд прошло");
+  }, 30000);
