@@ -1,4 +1,4 @@
-@media (max-width: 375px) { 
+@media (min-width: 375px) and (max-width: 1200px) { 
     .center {
         padding-left: 16px;
         padding-right: 16px;
@@ -67,7 +67,7 @@
 }
 
 .minicard { 
-    width: 343px;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -75,7 +75,7 @@
 
     &__img-mobile {  
           
-        width: 343px;
+        width: 100%;
         
     }
 

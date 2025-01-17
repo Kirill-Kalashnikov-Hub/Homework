@@ -257,7 +257,7 @@ body {
   line-height: 29px;
 }
 
-@media (max-width: 375px) {
+@media (min-width: 375px) and (max-width: 1200px) {
   .center {
     padding-left: 16px;
     padding-right: 16px;
@@ -311,13 +311,13 @@ body {
     line-height: 49px;
   }
   .minicard {
-    width: 343px;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
   }
   .minicard__img-mobile {
-    width: 343px;
+    width: 100%;
   }
   .minicard__info {
     padding-top: 29px;
