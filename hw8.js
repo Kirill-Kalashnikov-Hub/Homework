@@ -69,3 +69,19 @@ const people = [
 delayForSecond(function () {
     console.log('Привет, Глеб!');
 });
+
+
+console.log('Задание 5');
+function delayForSecond(cb) {
+    setTimeout(() => {
+      console.log("Прошла одна секунда");
+      if (cb) {
+        cb();
+      }
+    }, 1000);
+  }
+  
+  function sayHi(name) {
+    console.log(`Привет, ${name}!`);
+  }
+  delayForSecond(() => sayHi("Глеб"));
