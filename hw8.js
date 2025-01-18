@@ -47,12 +47,9 @@ const people = [
     console.log(now.toLocaleString());
   }
   
-  let secondsPassed = 0;
   const intervalId = setInterval(() => {
       printCurrentDate();
-      secondsPassed += 3;
   }, 3000);
-  
   
   setTimeout(() => {
       clearInterval(intervalId);
