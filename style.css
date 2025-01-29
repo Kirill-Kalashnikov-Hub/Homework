@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +9,7 @@ html {
 }
 
 body {
+  transition: background-color 0.3s ease;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -59,13 +61,6 @@ body {
 .header__button:hover {
   background: #fff;
   color: rgb(32, 32, 39);
-}
-
-.banner {
-  display: flex;
-  background-color: #BCEC30;
-  height: 90px;
-  width: 3220px;
 }
 
 .box-game {
@@ -343,5 +338,41 @@ body {
   .footer__heading {
     font-size: 16px;
     line-height: 20px;
+  }
+}
+.game-strip-container {
+  background-color: rgb(188, 236, 48);
+  width: 100%; /* Занимает всю ширину */
+  overflow: hidden; /* Скрывает контент, выходящий за границы */
+  white-space: nowrap; /* Предотвращает перенос строк */
+}
+
+.game-strip-container__strip {
+  display: inline-block; /* Чтобы полоса не растягивалась на всю ширину */
+  padding-left: 100%; /* Начало вне видимой области справа */
+  animation: scrollLeft 20s linear infinite; /* Анимация */
+}
+
+.game-strip {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  gap: 51px;
+}
+
+.game-item {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  color: black;
+  display: flex;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }/*# sourceMappingURL=style.css.map */

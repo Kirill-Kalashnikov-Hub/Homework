@@ -8,6 +8,7 @@ html {
 }
 
 body {
+    transition: background-color 0.3s ease;
     font-family: "Montserrat", sans-serif;
   }
 
@@ -70,14 +71,7 @@ body {
         color: rgb(32, 32, 39);
     }
 
-  }
-
-  .banner { 
-    display: flex;
-    background-color: #BCEC30;
-    height: 90px;
-    width: 3220px; 
-  }
+  } 
 
   .box-game { 
     background-image: url(img-box-game/Star\ 1.svg);
@@ -294,6 +288,7 @@ body {
 
 
 
-@import "mobile"
+@import "mobile";
+@import "banner";
 
   

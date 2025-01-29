@@ -1,0 +1,36 @@
+.game-strip-container {
+    background-color: rgb(188, 236, 48);
+    width: 100%; /* Занимает всю ширину */
+    overflow: hidden; /* Скрывает контент, выходящий за границы */
+    white-space: nowrap; /* Предотвращает перенос строк */
+}
+
+.game-strip-container__strip {
+    display: inline-block; /* Чтобы полоса не растягивалась на всю ширину */
+    padding-left: 100%; /* Начало вне видимой области справа */
+    animation: scrollLeft 20s linear infinite; /* Анимация */
+}
+.game-strip {  
+    height: 90px;  
+    display: flex;
+    align-items: center;
+    gap: 51px;
+}
+
+.game-item {
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+    display: flex;
+}
+
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
