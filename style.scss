@@ -18,12 +18,12 @@ body {
   }
 
   .header { 
-    height: 800px;
+    height: 710px;
     background: #E1FF8F;
     background-image: url(img-header/star1.png), 
                       url(img-header/star2.png), 
                       url(img-header/star3line.svg);
-    background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 157% -336px;
+    background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), top -334px right calc(50% - 671px);
     background-repeat: no-repeat;
 
 
@@ -194,7 +194,7 @@ body {
     background-repeat: no-repeat;
     &__title {  
         padding-top: 96px;
-        padding-bottom: 72px;
+        padding-bottom: 40px;
         color: rgb(255, 255, 255);
         font-size: 64px;
         line-height: 78px;                     
@@ -287,8 +287,8 @@ body {
 }
 
 
-
-@import "mobile";
 @import "banner";
+@import "mobile";
+
 
   

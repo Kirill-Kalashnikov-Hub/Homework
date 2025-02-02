@@ -19,10 +19,10 @@ body {
 }
 
 .header {
-  height: 800px;
+  height: 710px;
   background: #E1FF8F;
   background-image: url(img-header/star1.png), url(img-header/star2.png), url(img-header/star3line.svg);
-  background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 157% -336px;
+  background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), top -334px right calc(50% - 671px);
   background-repeat: no-repeat;
 }
 .header__top {
@@ -169,7 +169,7 @@ body {
 }
 .mini-game__title {
   padding-top: 96px;
-  padding-bottom: 72px;
+  padding-bottom: 40px;
   color: rgb(255, 255, 255);
   font-size: 64px;
   line-height: 78px;
@@ -249,12 +249,49 @@ body {
   line-height: 29px;
 }
 
+.game-strip-container {
+  background-color: rgb(188, 236, 48);
+  width: 100%; /* Занимает всю ширину */
+  overflow: hidden; /* Скрывает контент, выходящий за границы */
+  white-space: nowrap; /* Предотвращает перенос строк */
+}
+
+.game-strip-container__strip {
+  display: inline-block; /* Чтобы полоса не растягивалась на всю ширину */
+  padding-left: 100%; /* Начало вне видимой области справа */
+  animation: scrollLeft 20s linear infinite; /* Анимация */
+}
+
+.game-strip {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  gap: 51px;
+}
+
+.game-item {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  color: black;
+  display: flex;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 @media (min-width: 375px) and (max-width: 1200px) {
   .center {
     padding-left: 16px;
     padding-right: 16px;
   }
   .header {
+    height: 650px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -263,11 +300,13 @@ body {
     background-position: 37px 64px, calc(100% - 34px) calc(100% - 28px), calc(100% + 98px) calc(100% - 648px);
   }
   .header__top {
+    padding-top: 147px;
     font-size: 40px;
     line-height: 49px;
     text-align: center;
   }
   .header__text {
+    padding-bottom: 36px;
     font-size: 16px;
     line-height: 20px;
     text-align: center;
@@ -276,10 +315,19 @@ body {
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 600;
-    line-height: 141.69%;
-    margin-top: 38px;
     width: 285px;
     height: 55px;
+  }
+  .game-strip {
+    height: 50px;
+    gap: 27px;
+  }
+  .game-item {
+    font-size: 16px;
+  }
+  .game-item-img {
+    width: 19.34px;
+    height: 19.34px;
   }
   .box-game {
     display: none;
@@ -338,41 +386,5 @@ body {
   .footer__heading {
     font-size: 16px;
     line-height: 20px;
-  }
-}
-.game-strip-container {
-  background-color: rgb(188, 236, 48);
-  width: 100%; /* Занимает всю ширину */
-  overflow: hidden; /* Скрывает контент, выходящий за границы */
-  white-space: nowrap; /* Предотвращает перенос строк */
-}
-
-.game-strip-container__strip {
-  display: inline-block; /* Чтобы полоса не растягивалась на всю ширину */
-  padding-left: 100%; /* Начало вне видимой области справа */
-  animation: scrollLeft 20s linear infinite; /* Анимация */
-}
-
-.game-strip {
-  height: 90px;
-  display: flex;
-  align-items: center;
-  gap: 51px;
-}
-
-.game-item {
-  font-family: Montserrat;
-  font-size: 30px;
-  font-weight: 700;
-  color: black;
-  display: flex;
-}
-
-@keyframes scrollLeft {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
   }
 }/*# sourceMappingURL=style.css.map */
